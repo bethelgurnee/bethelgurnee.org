@@ -1,11 +1,11 @@
 {% extends "shared/layout.html" %}
 {% block body %}
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="homepage-rotator" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#homepage-rotator" data-slide-to="0" class="active"></li>
+        <li data-target="#homepage-rotator" data-slide-to="1"></li>
+        <li data-target="#homepage-rotator" data-slide-to="2"></li>
     </ol>
 
     <div class="carousel-inner" role="listbox">
@@ -21,13 +21,78 @@
     </div>
 
     <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <a class="left carousel-control" href="#homepage-rotator" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <a class="right carousel-control" href="#homepage-rotator" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Service Schedule
+            </div>
+            <div class="panel-body">
+                <ul>
+                <li>
+                    <strong>Sunday Mornings</strong>
+                    <ul>
+                        <li>8:00 am Worship</li>
+                        <li>9:00 am Fellowship</li>
+                        <li>9:30 am Education Hour</li>
+                        <li>10:45 am Worship</li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Recent Media
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li>
+                        <a href="#"><strong>This Week's Sermon</strong>: A Message At The Rest Area</a>
+                    </li>
+                    <li>
+                        <a href="#">This Week's Bethel Buzz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Location and Directions
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li>
+                        5110 Grand Avenue<br />
+                        Gurnee, IL 60031<br />
+                        <a href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Bethel+Lutheran+Church+and+Preschool,+Grand+Avenue,+Gurnee,+IL&aq=0&oq=Bethel+lutheran+church+and+pres&sll=39.739318,-89.266507&sspn=11.550547,23.269043&t=h&ie=UTF8&hq=Bethel+Lutheran+Church+and+Preschool,&hnear=Grand+Ave,+Gurnee,+Illinois&cid=1767663051656086991&ll=42.384669,-87.927103&spn=0.030431,0.054932&z=14&iwloc=A">Map It</a>
+                    </li>
+                    <li>
+                        Church<br />
+                        <a href="tel:847-244-9647">847-244-9647</a><br />
+                        <a href="mailto:office@bethelgurnee.org">office@bethelgurnee.org</a>
+                    </li>
+                    <li>
+                        Preschool<br />
+                        <a href="tel:847-244-9672">847-244-9672</a><br />
+                        <a href="mailto:preschool@bethelgurnee.org">preschool@bethelgurnee.org</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
